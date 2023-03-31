@@ -16,12 +16,17 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@chakra-ui/react": "2.5.5",
+    "@chakra-ui/theme-tools": "2.0.16",
     "@remix-run/dev": "^1.15.0",
     "@remix-run/eslint-config": "^1.15.0",
     "@remix-run/serve": "^1.15.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "eslint": "^8.27.0",
+    "prettier": "2.8.7",
+    "react-elfsight-widget": "1.0.3",
+    "react-icons": "4.8.0",
     "typescript": "^4.8.4"
   },
   "engines": {
