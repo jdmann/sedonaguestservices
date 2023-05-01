@@ -1,14 +1,24 @@
 import { Stack, Text } from '@chakra-ui/react'
-import BathtubImage from '../assets/bathtub.jpeg'
-import BedroomImage from '../assets/bedroom.jpeg'
-import HouseImage from '../assets/house.jpeg'
+import PinkDoor1 from '../assets/pink-door-1.png'
+import PinkDoor2 from '../assets/pink-door-2.png'
+import PinkDoor3 from '../assets/pink-door-3.png'
+import PinkDoor4 from '../assets/pink-door-4.png'
+import SedonaHeaderImage from '../assets/sedona-header.jpg'
+import SurrenderSuite1 from '../assets/surrender-suite-1.png'
+import SurrenderSuite2 from '../assets/surrender-suite-2.png'
 import { ImageBanner } from '../components/Banners/ImageBanner'
 import { PageHeader } from '../components/Headers/PageHeader'
 
 export default function About() {
   return (
     <Stack spacing={5}>
-      <PageHeader>Welcome</PageHeader>
+      <PageHeader
+        backgroundImage={`url(${SedonaHeaderImage})`}
+        height="300px"
+      >
+        Welcome
+      </PageHeader>
+
       <Text>
         Welcome to Sedona Guest Services! We provide high-quality and reliable management services
         for homeowners and property investors who wish to maximize their rental income while
@@ -61,7 +71,9 @@ export default function About() {
         to learn more about our services and how we can help you achieve your goals.
       </Text>
 
-      <ImageBanner images={[BedroomImage, BathtubImage, HouseImage]} />
+      <ImageBanner
+        images={[SurrenderSuite1, SurrenderSuite2, PinkDoor1, PinkDoor2, PinkDoor3, PinkDoor4]}
+      />
     </Stack>
   )
 }

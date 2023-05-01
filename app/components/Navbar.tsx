@@ -96,7 +96,7 @@ export const Navbar: React.FC<BoxProps> = (props) => {
                     928.985.0575
                   </Button>
                   <Button
-                    colorScheme="linkedin"
+                    colorScheme="primary"
                     as={Link}
                     to="/contact"
                   >

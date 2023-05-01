@@ -1,10 +1,12 @@
-import { Box, BoxProps, Container, Text } from '@chakra-ui/react'
+import type { BoxProps } from '@chakra-ui/react'
+import { Box, Container, Text } from '@chakra-ui/react'
 
 export const Footer: React.FC<BoxProps> = (props) => {
   return (
     <Box
       as="section"
-      bg="linkedin.500"
+      bg="secondary.600"
+      color="white"
       boxShadow="sm"
       textAlign="center"
       {...props}

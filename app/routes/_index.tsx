@@ -1,11 +1,16 @@
 import { Box, Container } from '@chakra-ui/react'
-import type { V2_MetaFunction } from '@remix-run/node'
+import type { LoaderFunction, V2_MetaFunction } from '@remix-run/node'
+import { redirect } from '@remix-run/node'
 import { Outlet } from '@remix-run/react'
 import { Footer } from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: 'Sedona Guest Services' }]
+}
+
+export const loader: LoaderFunction = async () => {
+  return redirect('/about')
 }
 
 export default function Index() {

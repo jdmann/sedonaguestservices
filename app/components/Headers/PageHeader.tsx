@@ -1,15 +1,15 @@
-import { Flex, FlexProps, Heading } from '@chakra-ui/react'
-import SedonaHeaderImage from '../../assets/sedona-header.jpg'
+import type { FlexProps } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 
 export const PageHeader: React.FC<FlexProps> = ({ children, ...rest }) => (
   <Flex
     borderRadius="0.5rem"
-    backgroundImage={`url(${SedonaHeaderImage})`}
     backgroundSize="cover"
-    height="300px"
+    height="200px"
+    color="white"
     justifyContent="center"
     alignItems="center"
-    color="white"
+    backgroundImage={'linear-gradient(to right, #B83280, #6a82fb)'}
     {...rest}
   >
     <Heading
