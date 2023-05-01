@@ -12,14 +12,14 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  useBreakpointValue,
 } from '@chakra-ui/react'
 //   import { Logo } from './Logo'
 import { Link } from '@remix-run/react'
+import { isMobile } from 'is-mobile'
 import { MdMenu, MdPhone } from 'react-icons/md'
 
 export const Navbar: React.FC<BoxProps> = (props) => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true })
+  const isDesktop = !isMobile()
   const handlePhone = () => window.open('tel:928.985.0575')
 
   return (
