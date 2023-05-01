@@ -20,6 +20,7 @@ import { MdMenu, MdPhone } from 'react-icons/md'
 
 export const Navbar: React.FC<BoxProps> = (props) => {
   const isDesktop = !isMobile()
+
   const handlePhone = () => window.open('tel:928.985.0575')
 
   return (

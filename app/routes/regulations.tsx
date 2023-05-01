@@ -4,7 +4,7 @@ import { PageHeader } from '../components/Headers'
 export default function Regulations() {
   return (
     <Stack spacing={5}>
-      <PageHeader>Area Regulations</PageHeader>
+      <PageHeader title="Area Regulations" />
 
       <Text>
         Sedona is located within Yavapai County, and short-term rental regulations vary by town or

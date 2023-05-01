@@ -4,7 +4,7 @@ import { PageHeader } from '../components/Headers'
 export default function Cleaning() {
   return (
     <Stack spacing={5}>
-      <PageHeader>Cleaning</PageHeader>
+      <PageHeader title="Cleaning" />
 
       <Text>
         Cleaning a short-term rental is an essential part of ensuring a comfortable and safe stay

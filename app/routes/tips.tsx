@@ -4,7 +4,7 @@ import { PageHeader } from '../components/Headers'
 export default function Tips() {
   return (
     <Stack spacing={5}>
-      <PageHeader>Tips for Owners</PageHeader>
+      <PageHeader title="Tips for Owners" />
 
       <Text>
         <strong>Set Clear House Rules:</strong> It’s important to have clear house rules that are

@@ -3,6 +3,7 @@ import PinkDoor1 from '../assets/pink-door-1.png'
 import PinkDoor2 from '../assets/pink-door-2.png'
 import PinkDoor3 from '../assets/pink-door-3.png'
 import PinkDoor4 from '../assets/pink-door-4.png'
+import SedonaHeaderImageFallback from '../assets/sedona-header-fallback.jpg'
 import SedonaHeaderImage from '../assets/sedona-header.jpg'
 import SurrenderSuite1 from '../assets/surrender-suite-1.png'
 import SurrenderSuite2 from '../assets/surrender-suite-2.png'
@@ -13,7 +14,9 @@ export default function About() {
   return (
     <Stack spacing={5}>
       <PageHeader
-        backgroundImage={`url(${SedonaHeaderImage})`}
+        title="Welcome"
+        src={SedonaHeaderImage}
+        fallbackSrc={SedonaHeaderImageFallback}
         height="300px"
       >
         Welcome
